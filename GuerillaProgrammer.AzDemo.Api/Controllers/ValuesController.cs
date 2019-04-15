@@ -22,13 +22,15 @@ namespace GuerillaProgrammer.AzDemo.Api.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            string result = string.Format("value - {0}", id);
+            return result;
         }
 
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
         {
+
         }
 
         // PUT api/values/5
