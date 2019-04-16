@@ -8,7 +8,8 @@ import { BrowserModule } from '@angular/platform-browser';
 })
 export class HomeComponent {
   private _http;
-  private _apiUrl = "https://localhost:5051/api/Values/";
+    //private _apiUrl = "https://localhost:5051/api/Values/";
+  private _apiUrl = "https://guerillaprogrammer-azdemo-api.azurewebsites.net/api/Values/";
   private message;
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
